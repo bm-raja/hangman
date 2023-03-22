@@ -1,8 +1,15 @@
-#Ord som spelare behöver gissa
-Word = "sweden"
+import random
+
+#list av Ord som spelare behöver gissa
+wordlist = ['sweden','finland','norway','germany','denmark']
+
+#spel kommer välja själv från listan.
+Word = random.choice(wordlist)
+
+#alla försökt kommer spara i den variable.
 guessed = ""
 
-#räknar fel försok
+#räknar fel försok, 
 nooftries = 6
 
 while nooftries > 0:
@@ -30,4 +37,6 @@ while nooftries > 0:
     if wrongCount == 0:
         print(f"Gratis! Ord var {Word}. you won!") 
         break
-print(f"You have use maximum tries! you lost, ord var {Word}")
+    
+print(f"You have use maximum tries! ord var {Word}")
+  
