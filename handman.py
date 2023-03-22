@@ -30,3 +30,4 @@ while nooftries > 0:
     if wrongCount == 0:
         print(f"Gratis! Ord var {Word}. you won!") 
         break
+print(f"You have use maximum tries! you lost, ord var {Word}")
